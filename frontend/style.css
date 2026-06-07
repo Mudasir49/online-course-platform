@@ -1,0 +1,193 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: #007bff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.auth-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin: 10px 10px 10px 0;
+    vertical-align: middle;
+}
+
+/* Fix MCQ alignment using Flexbox */
+.mcq-item label,
+.question-block label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.mcq-item label input[type="radio"],
+.question-block label input[type="radio"] {
+    margin: 0 12px 0 0;
+    /* Space between radio and text */
+    width: auto;
+}
+
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #131314;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #28a745;
+    display: block;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-success {
+    background: #28a745;
+}
+
+.btn-secondary {
+    background: #6c757d;
+}
+
+.lecture-list {
+    list-style: none;
+    padding: 0;
+}
+
+.lecture-list li {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lecture-list li.locked {
+    color: #999;
+    background: #fafafa;
+}
+
+.lecture-list li.completed::after {
+    content: '✓';
+    color: green;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.flash-msg {
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background: #f8d7da;
+    color: #721c24;
+}
